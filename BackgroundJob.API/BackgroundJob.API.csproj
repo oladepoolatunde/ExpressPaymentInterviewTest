@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.13" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+	  <PackageReference Include="Hangfire" Version="1.7.30" />
+	  <PackageReference Include="Hangfire.Dashboard.Basic.Authentication" Version="5.0.0" />
+	  <PackageReference Include="Hangfire.Dashboard.BasicAuthorization" Version="1.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ExpressPaymentTest.Data\ExpressPaymentTest.Data.csproj" />
+  </ItemGroup>
+
+</Project>
